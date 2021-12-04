@@ -1,0 +1,29 @@
+.contenedor{
+
+    background-color: rgb(14, 134, 182);
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    
+}
+
+.contenido{
+    
+    background-color: rgb(3, 66, 182);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.contenido_interno{
+
+    background-color: rgb(190, 222, 224);
+    width: 100px;
+    height: 100px;
+
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y enlaces</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Diseño de sitios WEB - UNAD 2021</h1>          
+    </header>
+        <nav>              
+            <ul class="menu-desplegable">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Temas</a>
+                    <ul>
+                        <li><a href="tema1.html">Flex Box</a></li>
+                        <li><a href="tema2.html">Listas y Enlaces</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Recursos digitales</a>
+                    <ul>
+                        <li><a href="recurso1.html">Recurso 1</a></li>
+                        <li><a href="recurso2.html">Recurso 2</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Aprendizaje</h4></a>
+                    <ul>
+                        <li><a href="aprendizaje_1.html">Actividad 1</a></li>
+                        <li><a href="aprendizaje_2.html">Actividad 2</a></li>
+                    </ul>
+                </li>
+                <li> <a href="autor.html">Acerca de</a>
+                    <ul>
+                        <li><a href="autor.html">Autor</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <div class="bajar"></div>
+    <main>
+        <section>
+            <article>               
+                <h1>Listas HTML, ¿qué son?</h1>
+                </br>
+                <p>Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página, todos los cuales irán precedidos, 
+                    generalmente, por un guión o número.</p>
+                <p>Los tipos de listas en HTML son los siguientes:</p>
+                <ul>
+                    <li>Listas ordenadas</li>
+                    <li>Listas desordenadas</li>
+                    <li>Listas de definiciones</li>
+                </ul>
+                </br>
+                <h3>Listas Ordenadas</h3>
+                </br>
+                <p>Las listas en HTML ordenadas son aquellas que nos muestran los elementos de la lista en orden. Para representar el orden tendremos los 
+                    elementos numerados. Es decir, cada uno de los elementos irá precedido de un número o letra que establezca su orden.</p>
+                <p><strong>Ejemplo:</strong></p>
+                &lt;ol&gt;<br>
+                &lt;li&gt;amarillo&lt;/li&gt;<br>
+                &lt;li&gt;azul&lt;/li&gt;<br>
+                &lt;li&gt;rojo&lt;/li&gt;<br>
+                &lt;ol/&gt;<br>
+                <p>Mostrará como resultado</p>
+                <p>1. Amarillo</p>
+                <p>1. Azul</p>
+                <p>1. Rojo</p>
+                </br>
+                <h3>Listas Desordenadas</h3>
+                </br>
+                <p>Las listas desordenadas en HTML nos sirven para mostrar los elementos sin ningún tipo de orden, 
+                    simplemente precedidos por una viñeta que puede ser un punto o un cuadrado.</p>
+                <p><strong>Ejemplo:</strong></p>
+                &lt;ul&gt;<br>
+                &lt;li&gt;amarillo&lt;/li&gt;<br>
+                &lt;li&gt;azul&lt;/li&gt;<br>
+                &lt;li&gt;rojo&lt;/li&gt;<br>
+                &lt;ul/&gt;<br>
+                <p>Mostrará como resultado</p>
+                <ul>
+                    <li>Amarillo</li>
+                    <li>Azul</li>
+                    <li>Rojo</li>
+                </ul>
+                </br>
+                <h3>Listas de Definiciones</h3>
+                </br>
+                <p>Las listas en HTML de definiciones en HTML nos sirven para montar listas en las que tenemos la estructura valor y definición. Suelen ser listas para definir términos, 
+                    como si fuese un diccionario, si bien pueden ser cualquier par valor-definición.</p>
+                <p><strong>Ejemplo:</strong></p>
+                &lt;dl&gt;<br>
+                &lt;dt&gt;Amarillo:&lt;/dt&gt;<br>
+                &lt;dd&gt;primer color de la bandera&lt;/dd&gt;<br>
+                &lt;dt&gt;Azul:&lt;/dt&gt;<br>
+                &lt;dd&gt;segundo color de la bandera&lt;/dd&gt;<br>
+                &lt;dt&gt;Rojo:&lt;/dt&gt;<br>
+                &lt;dd&gt;tercer color de la bandera&lt;/dd&gt;<br>
+                &lt;dl/&gt;<br>
+                <p>Mostrará como resultado</p>
+                <dl>
+                    <dt>Amarillo:</dt>
+                    <dd>primer color de la bandera</dd>
+                    <dt>Azul:</dt>
+                    <dd>segundo color de la bandera</dd>
+                    <dt>Rojo:</dt>
+                    <dd>tercer color de la bandera</dd>
+                </dl>
+                </br>
+                <h3>Referencia</h3>
+                </br>
+                <p>Victor Cuervo. Noviembre de 2017. Listas HTML. Recuperado de: <a href="">http://www.manualweb.net/html/listas-html/</a> </p>
+                
+                </br></br>
+                <h1>Enlaces HTML</h1>
+                </br>
+                <p>Lo más importante de los documentos HTML son los enlaces. Ya que mediante los enlaces en HTML podemos comunicar una página con otra. 
+                    De esta forma, enlazando documentos HTML podemos acabar tejiendo lo que es Internet.</p></br>
+                <p><strong>Para crear un enlace en HTML utilizamos la eqtiqueta "a" con la siguiente sintaxis:</strong></p></br>
+                &lt;a&gt;Contenido del enlace&lt;/a&gt;</br>
+                <p>Pero solo con esto el enlace no tendrá mucha utilidad ya que el principal objetivo del enlace es enlazar a un destino. Para poder 
+                    indicar el destino de un enlace utilizamos el atributo href. En valor del atributo href puede ser cualquier URL que represente un recurso. 
+                    Es decir, una página, una parte de una página, una URL genérica, un archivo, etc.</p>
+                &lt;a href="ULR"&gt;Contenido del enlace&lt;/a&gt;</br></br>
+                <p><strong>Ejemplo</strong></p>
+                &lt;a href="http://www.google.com"&gt;Ir a Google&lt;/a&gt;<br>
+                &lt;a href="http://www.nasa.gov"&gt;Ir a Nasa&lt;/a&gt;<br>
+                </br>
+                <h3>Referencia</h3>
+                <p>Victor Cuervo. Julio de 2017. Enlaces HTML. Recuperado de: <a href="">http://www.manualweb.net/html/enlaces-html/</a> </p>
+                                         
+            </article>            
+        </section>
+        <aside>
+            
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>       
+    </main>
+    <footer>
+        <h3>Sitio web desarrollado por Edgar Rojas</h3>
+    </footer>
+    
+</body>
+</html>
+
+
+
+

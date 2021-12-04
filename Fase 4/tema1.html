@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Diseño de sitios WEB - UNAD 2021</h1>          
+    </header>
+        <nav>              
+            <ul class="menu-desplegable">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Temas</a>
+                    <ul>
+                        <li><a href="tema1.html">Flex Box</a></li>
+                        <li><a href="tema2.html">Listas y Enlaces</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Recursos digitales</a>
+                    <ul>
+                        <li><a href="recurso1.html">Recurso 1</a></li>
+                        <li><a href="recurso2.html">Recurso 2</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Aprendizaje</h4></a>
+                    <ul>
+                        <li><a href="aprendizaje_1.html">Actividad 1</a></li>
+                        <li><a href="aprendizaje_2.html">Actividad 2</a></li>
+                    </ul>
+                </li>
+                <li> <a href="autor.html">Acerca de</a>
+                    <ul>
+                        <li><a href="autor.html">Autor</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <div class="bajar"></div>
+    <main>
+        <section>
+            <article>
+                <h1>Flex Box, ¿qué es?</h1>
+                <p>
+                    La maquetación web consiste en dar estructura y diseño a las páginas que forman un sitio en internet, durante muchos años se
+                    utilizaron variadas etiquetas y selectores para llevar a cabo funciones como lo son centrar o alinear un contenido
+                    sin embargo este trabajo en ocasiones era tedioso, la creciente cantidad de dispositivos móviles se creo una necesidad
+                    de maquetar de una forma más rápida y facil de comprender y por ello nació Flexbox que traduce <strong>diseño de caja flexible</strong>
+                    esta herramienta permite mediante css mejorar el diseño responsive y usar menos código en el posicionamiento de elementos en la página.
+                </p>
+                <br>
+                <h3>Estructura</h3>            
+                <p>La estructura de Flexbox se compone de contenedores padre e hijos (Contenedor-Flex y Elementos-Flex respectivamente)</p>
+                <img src="imagenes/flexbox/imagen1.jpg" alt="Esta es la estructura básica FlexBox" width="500" height="278">
+                <br>
+                <ul><li>El <strong>Contenedor-Flex</strong> es nuestro contenedor padre, y es él quién va a contener a todos los elementos hijos a los cuáles queremos 
+                    posicionar.
+                    </li>                
+                    <li>El <strong>Elemento-Flex</strong> es nuestro elemento hijo, el cual utilizará todo el espacio disponible para ubicarse de acuerdo a 
+                    las propiedades a las cuales este sometido junto a los demas Elementos-Flex contenidos.
+                    </li>
+                </ul>
+                <br>
+                <p>Cada diseño flex esta compuesto por dos ejes: </p>            
+                <ul><li>Un eje principal que define el posicionamiento horizontal de los Elementos-Flex. 
+                    </li>                
+                    <li>Un eje secundario que define el posicionamiento vertical de los Elementos-Flex.
+                    </li>
+                </ul>
+                <p>El Contendor-Flex contiene direcciones que definen el origen y el fin del flujo de Elementos-Flex:</p>
+
+                <ul>  
+                    <li>Inicio principal</li> 
+                    <li>Fin principal</li>   
+                    <li>Inicio secundario</li>  
+                    <li>Fin secundario</li>  
+                </ul> 
+                <br>
+                <p>Cada Elemento-Flex está definido por sus dimensiones, anchura(tamaño principal) y altura(tamaño secundario) 
+                    que dependen del eje principal y el eje secundario. </p>
+                <br>
+                <h3>Propiedades</h3>
+                <p>Si queremos utilizar las propiedades de Flexbox tendremos que definirlo mediante la propiedad display y su valor 
+                    flex o inline-flex dentro del selector que nosotros definamos que es nuestro elemento padre o Contenedor-Flex.</p>
+                
+                <p>.contenedor-padre {</p>
+                <p> display: flex</p>
+                <p>}</p>
+                <br>
+                <p><strong>En este documento solo se describirán brevemente las propiedades más importantes del elemento padre</strong></p>
+                <br>
+                
+                <h3>Flex-direction</h3>
+                <p>Es la encargada de definir el eje principal y secundario de nuestros elementos hijos. Estos ejes como ya se mencionó 
+                    pueden se verticales, formando columnas y horizontales formando filas.</p>
+                <p>.contenedor-padre {</p>
+                <p> display: flex</p>
+                <p>flex-direction: row | row-reverse | column | column-reverse ;</p>
+                <p>}</p>
+                <img src="imagenes/flexbox/imagen2.jpg" width="500" height="548">
+
+                <h3>Flex-wrap</h3>
+                <p>Por defecto flex, trata de disponer de los elementos en una misma línea, si no es el caso que necesitás, con flex-wrap 
+                    podés ordenar los elementos en mas de una fila o columna.</p>
+                <p>.contenedor-padre {</p>
+                <p> display: flex</p>
+                <p> flex-wrap: nowrap | wrap | wrap-reverse ;</p>
+                <p>}</p>
+                <img src="imagenes/flexbox/imagen3.jpg" width="600" height="366">
+
+                <h3>Justify-content</h3>
+                <p>Cuando nombramos el eje principal de un elemento padre, es decir el eje horizontal, se destaca esta propiedad para dar 
+                    direccionamiento a los elementos hijos.</p>
+                <p>.contenedor-padre {</p>
+                <p> display: flex</p>
+                <p> justify-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly ;</p>
+                <p>}</p>
+                <img src="imagenes/flexbox/imagen4.jpg" width="500" height="738">
+
+                <h3>Align-items</h3>
+                <p>Al igual que justify-content esta propiedad te permite distribuir los elementos en un eje, pero esta vez en el eje vertical.</p>
+                <p>.contenedor-padre {</p>
+                <p> display: flex</p>
+                <p> align-items: flex-start | flex-end | center | stretch | baseline ;</p>
+                <p>}</p>
+                <img src="imagenes/flexbox/imagen5.jpg" width="500" height="733">
+                <br>
+                <p>Para finalizar hay que remarcar que dichas propiedades se pueden combinar unas con otras, definir contenedores padres con elementos hijos a los cuales 
+                    también pueden definirse como padres que contienen hijos y así sucesivamente. Es por ello que Flexbox nos da un sin fin de posibilidades 
+                    para crear disposiciones para los componentes de nuestras páginas web, de una manera sencilla y muy fácil de aprender.</p>
+                
+                <br>
+                <h3>Referencia</h3>
+                <p>German Cabrera. Febrero de 2020. Flexbox - ¿Qué es y para qué sirve?. Recuperado de: <a href="">https://somospnt.com/blog/148-flexbox-que-es-y-para-que-sirve</a> </p>
+                
+            </article>            
+        </section>
+        <aside>
+            
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>       
+    </main>
+    <footer>
+        <h3>Sitio web desarrollado por Edgar Rojas</h3>
+    </footer>
+    
+</body>
+</html>
+
+
+
+
